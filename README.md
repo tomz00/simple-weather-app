@@ -1,7 +1,7 @@
 # Simple Weather App
-Very simple weather app made in Linux scripting languague - Bash. This script is using OpenWeather API and will only print out Temperature, Humidity and Wind speed. You can tell it to be verbose and pass an arguments to return only what you want.
+A Very simple Weather App made in Linux scripting languague - Bash. This script is using OpenWeather API. The output is only Temperature, Humidity and Wind speed. You can tell it to be verbose and pass an arguments to return only what you want.
 
-# Setup
+## Setup
 
 First install jq
 ```
@@ -9,7 +9,7 @@ sudo apt install jq -y
 ```
 Install this script
 ```
-wget https://raw.githubusercontent.com/t0mzSK/simple-weather-app/main/weather.sh
+wget https://raw.githubusercontent.com/tomz00/simple-weather-app/main/weather.sh
 ```
 Make the file executable
 ```
@@ -17,9 +17,9 @@ chmod u+x
 ```
 Lastly, add your API key to the "key" variable.
 
-# Usage
+## Usage
 ```
-./weather.sh <city> - this will return current Temperature, Humidity and Wind speed in that city
+./weather.sh <city> - this will return current Temperature, Humidity and Wind speed in given city
 
 Optional arguments:
   -t    Only print temperature
@@ -27,7 +27,7 @@ Optional arguments:
   -w    Only print wind speed
 ```
 
-# Example
+## Example
 ```
 ./weather.sh London - output will be: 7.2 °C 95% 3.09 m/s
 ./weather.sh London -v - output will be: Temperature: 7.2 °C Humidity: 95% Wind speed: 3.09 m/s
